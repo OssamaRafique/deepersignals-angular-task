@@ -1,0 +1,23 @@
+<label
+  class="flex items-center hover:bg-gray-100 py-2 px-4 rounded-lg bg-white text-gray-600"
+  [class.cursor-pointer]="hasChildren"
+>
+  <input
+    type="checkbox"
+    class="form-checkbox"
+    [checked]="isExpanded"
+    (click)="toggleExpansion()"
+  />
+  <ng-container *ngIf="!hasChildren; else arrowIcon">
+    <span>&#183;</span>
+  </ng-container>
+  <ng-template #arrowIcon
+    ><app-arrow-icon [pointingRight]="isExpanded"></app-arrow-icon
+  ></ng-template>
+  <span class="ml-2 font-medium">{{ account.name }}</span>
+</label>
+<div *ngIf="isExpanded" [@expandCollapse]="isExpanded" class="pl-6">
+  <ng-container *ngFor="let account of account.accounts">
+    <app-account [account]="account"></app-account>
+  </ng-container>
+</div>

@@ -1,0 +1,10 @@
+:host {
+  display: block;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
