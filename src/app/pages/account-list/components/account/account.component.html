@@ -11,9 +11,9 @@
   <ng-container *ngIf="!hasChildren; else arrowIcon">
     <span>&#183;</span>
   </ng-container>
-  <ng-template #arrowIcon
-    ><app-arrow-icon [pointingRight]="isExpanded"></app-arrow-icon
-  ></ng-template>
+  <ng-template #arrowIcon>
+    <app-arrow-icon [pointingRight]="isExpanded"></app-arrow-icon>
+  </ng-template>
   <span class="ml-2 font-medium">{{ account.name }}</span>
 </label>
 <div *ngIf="isExpanded" [@expandCollapse]="isExpanded" class="pl-6">

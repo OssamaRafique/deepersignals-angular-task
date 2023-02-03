@@ -14,7 +14,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class SearchInputComponent implements ControlValueAccessor {
-  @Input() public placeholder: string = 'Search trees by name';
+  @Input() public placeholder: string = 'Search';
   private _onChange: any = () => {};
   private _onTouch: any = () => {};
   private _val: string = '';
