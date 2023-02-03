@@ -41,7 +41,7 @@ export class AccountListComponent implements OnInit, OnDestroy {
     });
   }
 
-  public initDataStreams(): void {
+  private initDataStreams(): void {
     this.filteredAccountData$ = this._accountListStore.filteredData$;
     this.isLoading$ = this._accountListStore.isLoading$;
   }
