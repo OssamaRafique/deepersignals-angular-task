@@ -11,6 +11,8 @@
   </a>
 </p>
 
+### ✨ [Demo](https://deepersignals-angular-task.vercel.app)
+
 ### Requirements
 
 Create an angular app to render the data coming from a backend endpoint in a tree view with search.
