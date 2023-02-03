@@ -13,9 +13,9 @@ import { AccountListStore } from 'src/app/shared/stores/account-list.store';
 export class AccountListComponent implements OnInit, OnDestroy {
   public readonly treeListFormKeys: typeof TreeListFormKeys = TreeListFormKeys;
   public formGroup: FormGroup;
-  private _destroy: Subject<void> = new Subject<void>();
   public filteredAccountData$: Observable<IAccount | null>;
   public isLoading$: Observable<boolean>;
+  private _destroy: Subject<void> = new Subject<void>();
 
   constructor(
     private _accountListStore: AccountListStore,
