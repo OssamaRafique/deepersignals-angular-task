@@ -1,13 +1,10 @@
 # Angular Task
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.5.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
     <img alt="Version" src="https://img.shields.io/badge/build-passing-brightgreen" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://ko-fi.com/ossamarafique" target="_blank">
-    <img alt="Buy Me A Coffee" src="https://www.ko-fi.com/img/githubbutton_sm.svg" />
   </a>
   <a href="https://twitter.com/OssamaRafique" target="_blank">
     <img alt="Twitter: OssamaRafique" src="https://img.shields.io/twitter/follow/OssamaRafique.svg?style=social" />
