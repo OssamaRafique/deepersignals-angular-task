@@ -1,27 +1,59 @@
-# Deepersignals
+# Angular Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.5.0-blue.svg?cacheSeconds=2592000" />
+    <img alt="Version" src="https://img.shields.io/badge/build-passing-brightgreen" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://ko-fi.com/ossamarafique" target="_blank">
+    <img alt="Buy Me A Coffee" src="https://www.ko-fi.com/img/githubbutton_sm.svg" />
+  </a>
+  <a href="https://twitter.com/OssamaRafique" target="_blank">
+    <img alt="Twitter: OssamaRafique" src="https://img.shields.io/twitter/follow/OssamaRafique.svg?style=social" />
+  </a>
+</p>
 
-## Development server
+### Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Create an angular app to render the data coming from a backend endpoint in a tree view with search.
 
-## Code scaffolding
+1. Make a tree view that renders the data provided from the Backend
+    1. make each level of the tree collapsible 
+2. Enable search for the view
+    1. the search should be case insensitive
+    2. the result should still be a tree view showing the whole path to the found result
+3. You also should use the following:
+    1. tailwindCss to style components
+    2. state management (NgRx - component store)
+    3. angular reactive forms
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Backend
 
-## Build
+Use the following mock endpoint to retrieve data.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```jsx
+https://71013f65-b118-41be-9b20-f062e0e58598.mock.pstmn.io/accounts
+```
 
-## Running unit tests
+The endpoint will return a multidimensional array which describes the hierarchy structure of accounts in the database. There is always one root node which contains a property called accounts which contains all the accounts belove the node. Same goes for the next nodes in the tree. The hierarchy can be **N levels** deep.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Example of the structure:**
 
-## Running end-to-end tests
+- deepersignals
+    - apple
+        - ios
+        - macos
+    - microsoft
+        - xbox
+        - windows
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If a search is conducted on this structure for the term ‘*********windows’********* on screen we should see the following structure:
 
-## Further help
+- deepersignals
+    - microsoft
+        - windows
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Submitting the task
+
+Once you are done with the task please push your code to a git repository of your choice and share a link to it with us.
